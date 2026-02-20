@@ -1,0 +1,19 @@
+{
+  "name": "devhub",
+  "private": true,
+  "version": "1.0.0",
+  "description": "A dynamic and fullstack portfolio application built with NestJS (backend) and React + TypeScript (frontend).",
+  "workspaces": ["apps/*"],
+  "scripts": {
+    "install:all": "npm install --workspaces",
+    "dev": "npm run -ws --parallel dev",
+    "build": "npm run build -ws",
+    "start": "npm run start -ws",
+    "test": "echo \"Error: no test specified\" && exit 1",
+
+    "dev:api": "npm run dev -w apps/api",
+    "dev:web": "npm run dev -w apps/web"
+  },
+  "author": "XiaoPang",
+  "license": "ISC"
+}
